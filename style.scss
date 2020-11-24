@@ -1,0 +1,106 @@
+@font-face {
+  font-family: thewitcher-medium;
+  src: url(thewitcher-font/Thewitcher-jnOj.ttf);
+}
+
+//Colors
+
+$Red: rgb(118, 16, 16);
+$White: rgb(220, 220, 220);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(28, 27, 27);
+  margin: 0;
+  font-family: thewitcher-medium;
+}
+
+.anim-body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .fog-anim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    bottom: 0;
+    background: url('https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png')
+      repeat-x;
+    background-size: 200% auto;
+    background-position: 0 bottom;
+    animation: fogAnim 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      padding: 40px 0;
+      color: $White;
+
+      .logo {
+        margin-left: 70px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        h2 {
+          letter-spacing: 1px;
+        }
+
+        p {
+          color: $Red;
+        }
+      }
+
+      .logo::after {
+        content: '';
+        height: 1px;
+        width: 65%;
+        background: $White;
+        position: absolute;
+        bottom: -8px;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 70px;
+
+        li {
+          cursor: pointer;
+          padding: 0 30px;
+          font-size: 16px;
+          transition: 0.5s;
+        }
+
+        li:hover {
+          color: $Red;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fogAnim {
+  0% {
+    background-position: 200% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}
