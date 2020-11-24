@@ -113,7 +113,7 @@ body {
   color: #540e0e;
 }
 
-.anim-body .fog-anim img {
+.anim-body .fog-anim #jasio {
   position: absolute;
   bottom: 0%;
   left: 40%;
@@ -122,6 +122,15 @@ body {
   -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
           animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
   z-index: -1;
+}
+
+.anim-body .fog-anim #bj {
+  position: absolute;
+  opacity: 0.05;
+  width: 100%;
+  z-index: -5;
+  height: 70%;
+  bottom: 0;
 }
 
 @-webkit-keyframes fogAnim {

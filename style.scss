@@ -95,13 +95,21 @@ body {
         }
       }
     }
-    img {
+    #jasio {
       position: absolute;
       bottom: 0%;
       left: 40%;
       transform: translateX(-420%);
       animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
       z-index: -1;
+    }
+    #bj {
+      position: absolute;
+      opacity: 0.05;
+      width: 100%;
+      z-index: -5;
+      height: 70%;
+      bottom: 0;
     }
   }
 }
