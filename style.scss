@@ -5,8 +5,8 @@
 
 //Colors
 
-$Red: rgb(118, 16, 16);
-$White: rgb(220, 220, 220);
+$Red: rgb(84, 14, 14);
+$White: rgba(214, 214, 214, 0.686);
 
 * {
   box-sizing: border-box;
@@ -101,6 +101,7 @@ body {
       left: 40%;
       transform: translateX(-420%);
       animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+      z-index: -1;
     }
   }
 }

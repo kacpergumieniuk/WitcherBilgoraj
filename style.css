@@ -52,7 +52,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 40px 0;
-  color: gainsboro;
+  color: rgba(214, 214, 214, 0.686);
 }
 
 .anim-body .fog-anim .navbar .logo {
@@ -78,14 +78,14 @@ body {
 }
 
 .anim-body .fog-anim .navbar .logo p {
-  color: #761010;
+  color: #540e0e;
 }
 
 .anim-body .fog-anim .navbar .logo::after {
   content: '';
   height: 1px;
   width: 65%;
-  background: gainsboro;
+  background: rgba(214, 214, 214, 0.686);
   position: absolute;
   bottom: -8px;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .anim-body .fog-anim .navbar ul li:hover {
-  color: #761010;
+  color: #540e0e;
 }
 
 .anim-body .fog-anim img {
@@ -121,6 +121,7 @@ body {
           transform: translateX(-420%);
   -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
           animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+  z-index: -1;
 }
 
 @-webkit-keyframes fogAnim {
