@@ -15,9 +15,10 @@ $White: rgb(220, 220, 220);
 }
 
 body {
-  background-color: rgb(28, 27, 27);
+  background-color: rgb(16, 16, 16);
   margin: 0;
   font-family: thewitcher-medium;
+  height: 100vh;
 }
 
 .anim-body {
@@ -45,7 +46,7 @@ body {
       justify-content: space-between;
       flex-direction: row;
 
-      padding: 40px 0;
+      margin: 40px 0;
       color: $White;
 
       .logo {
@@ -56,6 +57,7 @@ body {
         align-items: center;
         text-align: center;
         position: relative;
+        cursor: pointer;
 
         h2 {
           letter-spacing: 1px;
@@ -93,6 +95,13 @@ body {
         }
       }
     }
+    img {
+      position: absolute;
+      bottom: 0%;
+      left: 40%;
+      transform: translateX(-420%);
+      animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+    }
   }
 }
 
@@ -102,5 +111,11 @@ body {
   }
   100% {
     background-position: 0% bottom;
+  }
+}
+
+@keyframes comein {
+  to {
+    transform: translateX(0);
   }
 }
