@@ -57,9 +57,10 @@ body {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-
+      position: fixed;
       margin: 40px 0;
       color: $White;
+      width: 100%;
 
       .logo {
         margin-left: 70px;
