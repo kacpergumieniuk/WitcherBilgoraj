@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+* a {
+  text-decoration: none;
+}
+
 body {
   background-color: #101010;
   margin: 0;
@@ -90,6 +94,7 @@ body {
 
 .anim-body .fog-anim .navbar .logo h2 {
   letter-spacing: 1px;
+  color: rgba(214, 214, 214, 0.686);
 }
 
 .anim-body .fog-anim .navbar .logo p {
