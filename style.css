@@ -8,13 +8,26 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #101010;
   margin: 0;
   font-family: thewitcher-medium;
-  height: 100vh;
+  height: 400vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #540e0e;
 }
 
 .anim-body {
@@ -105,11 +118,16 @@ body {
   cursor: pointer;
   padding: 0 30px;
   font-size: 16px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-.anim-body .fog-anim .navbar ul li:hover {
+.anim-body .fog-anim .navbar ul li a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: rgba(214, 214, 214, 0.686);
+}
+
+.anim-body .fog-anim .navbar ul a:hover {
   color: #540e0e;
 }
 
@@ -131,6 +149,18 @@ body {
   z-index: -5;
   height: 70%;
   bottom: 0;
+}
+
+.film-section {
+  height: 100vh;
+}
+
+.story-section {
+  height: 100vh;
+}
+
+.contact-section {
+  height: 100vh;
 }
 
 @-webkit-keyframes fogAnim {
