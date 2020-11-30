@@ -159,6 +159,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  position: relative;
 
   h1 {
     font-size: 72px;
@@ -208,14 +209,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
   .content {
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 125px;
     transform: translateX(-400%);
     animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+
+    h2 {
+      color: $White;
+      margin-bottom: 20px;
+    }
 
     iframe {
       border: 15px solid rgba(26, 26, 26, 0.686);
