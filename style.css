@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: thewitcher-medium;
   height: 400vh;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -72,6 +73,7 @@ body {
   margin: 40px 0;
   color: rgba(214, 214, 214, 0.686);
   width: 100%;
+  z-index: 100;
 }
 
 .anim-body .fog-anim .navbar .logo {
@@ -141,12 +143,23 @@ body {
 .anim-body .fog-anim #jasio {
   position: absolute;
   bottom: 0%;
-  left: 40%;
+  left: 30%;
   -webkit-transform: translateX(-420%);
           transform: translateX(-420%);
   -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
           animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
   z-index: -1;
+}
+
+.anim-body .fog-anim #kamil {
+  position: absolute;
+  z-index: -1;
+  right: 30%;
+  bottom: -5%;
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+  -webkit-animation: comeinkamil 4s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+          animation: comeinkamil 4s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
 }
 
 .anim-body .fog-anim #bj {
@@ -168,6 +181,29 @@ body {
 
 .contact-section {
   height: 100vh;
+  position: relative;
+}
+
+.contact-section footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section footer i {
+  color: #540e0e;
+  margin: 0 50px;
 }
 
 @-webkit-keyframes fogAnim {
@@ -199,6 +235,20 @@ body {
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes comeinkamil {
+  to {
+    -webkit-transform: translateX(0) scale(0.7);
+            transform: translateX(0) scale(0.7);
+  }
+}
+
+@keyframes comeinkamil {
+  to {
+    -webkit-transform: translateX(0) scale(0.7);
+            transform: translateX(0) scale(0.7);
   }
 }
 /*# sourceMappingURL=style.css.map */

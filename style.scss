@@ -7,6 +7,7 @@
 
 $Red: rgb(84, 14, 14);
 $White: rgba(214, 214, 214, 0.686);
+$Black: rgb(16, 16, 16);
 
 * {
   box-sizing: border-box;
@@ -20,10 +21,11 @@ $White: rgba(214, 214, 214, 0.686);
 }
 
 body {
-  background-color: rgb(16, 16, 16);
+  background-color: $Black;
   margin: 0;
   font-family: thewitcher-medium;
   height: 400vh;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -65,6 +67,7 @@ body {
       margin: 40px 0;
       color: $White;
       width: 100%;
+      z-index: 100;
 
       .logo {
         margin-left: 70px;
@@ -121,10 +124,20 @@ body {
     #jasio {
       position: absolute;
       bottom: 0%;
-      left: 40%;
+      left: 30%;
       transform: translateX(-420%);
       animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
       z-index: -1;
+    }
+
+    #kamil {
+      position: absolute;
+      z-index: -1;
+
+      right: 30%;
+      bottom: -5%;
+      transform: translateX(400%);
+      animation: comeinkamil 4s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
     }
     #bj {
       position: absolute;
@@ -147,6 +160,23 @@ body {
 
 .contact-section {
   height: 100vh;
+  position: relative;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    i {
+      color: $Red;
+      margin: 0 50px;
+    }
+  }
 }
 
 @keyframes fogAnim {
@@ -161,5 +191,11 @@ body {
 @keyframes comein {
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes comeinkamil {
+  to {
+    transform: translateX(0) scale(0.7);
   }
 }
