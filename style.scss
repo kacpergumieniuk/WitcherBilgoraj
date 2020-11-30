@@ -28,6 +28,19 @@ body {
   overflow-x: hidden;
 }
 
+.bj {
+  position: absolute;
+  opacity: 0.05;
+  width: 100%;
+  z-index: -5;
+  height: 70%;
+  bottom: 0;
+}
+
+.comein {
+  animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -71,7 +84,7 @@ body {
 
       .logo {
         margin-left: 70px;
-        font-size: 24px;
+        font-size: 26px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,7 +120,7 @@ body {
         li {
           cursor: pointer;
           padding: 0 30px;
-          font-size: 16px;
+          font-size: 18px;
 
           a {
             text-decoration: none;
@@ -124,7 +137,7 @@ body {
     #jasio {
       position: absolute;
       bottom: 0%;
-      left: 30%;
+      left: 33%;
       transform: translateX(-420%);
       animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
       z-index: -1;
@@ -132,26 +145,36 @@ body {
 
     #kamil {
       position: absolute;
-      z-index: -1;
+      z-index: -3;
 
-      right: 30%;
+      right: 33%;
       bottom: -5%;
       transform: translateX(400%);
       animation: comeinkamil 4s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
-    }
-    #bj {
-      position: absolute;
-      opacity: 0.05;
-      width: 100%;
-      z-index: -5;
-      height: 70%;
-      bottom: 0;
     }
   }
 }
 
 .film-section {
   height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    transform: translateX(-400%);
+    //animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+
+    iframe {
+      border: 15px solid rgba(26, 26, 26, 0.686);
+      border-radius: 15px;
+    }
+  }
 }
 
 .story-section {

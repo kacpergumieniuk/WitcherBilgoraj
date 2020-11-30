@@ -23,6 +23,20 @@ body {
   overflow-x: hidden;
 }
 
+.bj {
+  position: absolute;
+  opacity: 0.05;
+  width: 100%;
+  z-index: -5;
+  height: 70%;
+  bottom: 0;
+}
+
+.comein {
+  -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+          animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -78,7 +92,7 @@ body {
 
 .anim-body .fog-anim .navbar .logo {
   margin-left: 70px;
-  font-size: 24px;
+  font-size: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +140,7 @@ body {
 .anim-body .fog-anim .navbar ul li {
   cursor: pointer;
   padding: 0 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .anim-body .fog-anim .navbar ul li a {
@@ -143,7 +157,7 @@ body {
 .anim-body .fog-anim #jasio {
   position: absolute;
   bottom: 0%;
-  left: 30%;
+  left: 33%;
   -webkit-transform: translateX(-420%);
           transform: translateX(-420%);
   -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
@@ -153,8 +167,8 @@ body {
 
 .anim-body .fog-anim #kamil {
   position: absolute;
-  z-index: -1;
-  right: 30%;
+  z-index: -3;
+  right: 33%;
   bottom: -5%;
   -webkit-transform: translateX(400%);
           transform: translateX(400%);
@@ -162,17 +176,39 @@ body {
           animation: comeinkamil 4s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
 }
 
-.anim-body .fog-anim #bj {
-  position: absolute;
-  opacity: 0.05;
-  width: 100%;
-  z-index: -5;
-  height: 70%;
-  bottom: 0;
-}
-
 .film-section {
   height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.film-section .content {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.film-section .content iframe {
+  border: 15px solid rgba(26, 26, 26, 0.686);
+  border-radius: 15px;
 }
 
 .story-section {
