@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: thewitcher-medium;
   height: 400vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bj {
@@ -178,6 +178,70 @@ body {
 
 .film-section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.film-section h1 {
+  font-size: 72px;
+  color: rgba(214, 214, 214, 0.686);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.film-section h1:hover {
+  margin-bottom: 10px;
+  color: #540e0e;
+}
+
+.film-section #left {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.film-section #right {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+
+.film-section .season {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 270px 100px;
+}
+
+.film-section .season ul {
+  list-style: none;
+}
+
+.film-section .season ul li {
+  color: rgba(214, 214, 214, 0.686);
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.film-section .season ul li:hover {
+  color: #540e0e;
+}
+
+.story-section {
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,7 +254,7 @@ body {
           align-items: center;
 }
 
-.film-section .content {
+.story-section .content {
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,15 +268,13 @@ body {
   margin-top: 100px;
   -webkit-transform: translateX(-400%);
           transform: translateX(-400%);
+  -webkit-animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+          animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
 }
 
-.film-section .content iframe {
+.story-section .content iframe {
   border: 15px solid rgba(26, 26, 26, 0.686);
   border-radius: 15px;
-}
-
-.story-section {
-  height: 100vh;
 }
 
 .contact-section {
@@ -287,4 +349,37 @@ body {
             transform: translateX(0) scale(0.7);
   }
 }
+
+/* position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+.content {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  transform: translateX(-400%);
+  //animation: comein 2s cubic-bezier(0.82, 0.31, 0, 0.92) forwards;
+
+  iframe {
+    border: 15px solid rgba(26, 26, 26, 0.686);
+    border-radius: 15px;
+  }
+}
+
+
+ h1 {
+      font-size: 72px;
+      margin: 0 100px;
+      color: $White;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    h1:hover {
+      margin-bottom: 15px;
+      color: $Red;
+    }
+*/
 /*# sourceMappingURL=style.css.map */
