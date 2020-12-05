@@ -254,6 +254,25 @@ body {
 .contact-section {
   height: 100vh;
   position: relative;
+
+  .icons {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-section {
+      margin: 0 50px;
+
+      i {
+        color: $White;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      i:hover {
+        color: $Red;
+      }
+    }
+  }
 }
 
 @keyframes fogAnim {

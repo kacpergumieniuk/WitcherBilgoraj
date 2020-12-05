@@ -314,6 +314,34 @@ body {
   position: relative;
 }
 
+.contact-section .icons {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section .icons .icon-section {
+  margin: 0 50px;
+}
+
+.contact-section .icons .icon-section i {
+  color: rgba(214, 214, 214, 0.686);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-section .icons .icon-section i:hover {
+  color: #540e0e;
+}
+
 @-webkit-keyframes fogAnim {
   0% {
     background-position: 200% bottom;
