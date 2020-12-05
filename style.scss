@@ -19,6 +19,14 @@ $Black: rgb(16, 16, 16);
     text-decoration: none;
   }
 }
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 body {
   background-color: $Black;
@@ -175,7 +183,6 @@ body {
     font-size: 72px;
     color: $White;
     transition: 0.5s;
-    cursor: pointer;
   }
   h1:hover {
     margin-bottom: 10px;
@@ -233,11 +240,11 @@ body {
 
     h2 {
       color: $White;
-      font-size: 32px;
+      font-size: 24px;
     }
 
     iframe {
-      border: 15px solid rgba(26, 26, 26, 0.686);
+      border: 7px solid rgba(26, 26, 26, 0.686);
       border-radius: 15px;
       margin-top: 25px;
     }
@@ -247,22 +254,6 @@ body {
 .contact-section {
   height: 100vh;
   position: relative;
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-    background-color: rgb(16, 16, 16);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    i {
-      color: $Red;
-      margin: 0 50px;
-    }
-  }
 }
 
 @keyframes fogAnim {
