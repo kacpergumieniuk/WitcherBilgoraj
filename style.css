@@ -114,6 +114,8 @@ body {
   text-align: center;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .anim-body .fog-anim .navbar .logo h2 {
@@ -123,6 +125,11 @@ body {
 
 .anim-body .fog-anim .navbar .logo p {
   color: #540e0e;
+}
+
+.anim-body .fog-anim .navbar .logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .anim-body .fog-anim .navbar ul {
@@ -140,6 +147,8 @@ body {
   cursor: pointer;
   padding: 0 30px;
   font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .anim-body .fog-anim .navbar ul li a {
@@ -147,6 +156,11 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: rgba(214, 214, 214, 0.686);
+}
+
+.anim-body .fog-anim .navbar ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .anim-body .fog-anim .navbar ul a:hover {
@@ -279,12 +293,13 @@ body {
 
 .story-section .content h2 {
   color: rgba(214, 214, 214, 0.686);
-  margin-bottom: 20px;
+  font-size: 32px;
 }
 
 .story-section .content iframe {
   border: 15px solid rgba(26, 26, 26, 0.686);
   border-radius: 15px;
+  margin-top: 25px;
 }
 
 .contact-section {

@@ -91,6 +91,7 @@ body {
         text-align: center;
         position: relative;
         cursor: pointer;
+        transition: 0.5s;
 
         h2 {
           letter-spacing: 1px;
@@ -100,6 +101,10 @@ body {
         p {
           color: $Red;
         }
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
       }
 
       /*.logo::after {
@@ -121,12 +126,17 @@ body {
           cursor: pointer;
           padding: 0 30px;
           font-size: 18px;
+          transition: 0.5s;
 
           a {
             text-decoration: none;
             transition: 0.5s;
             color: $White;
           }
+        }
+
+        li:hover {
+          transform: scale(1.05);
         }
 
         a:hover {
@@ -223,12 +233,13 @@ body {
 
     h2 {
       color: $White;
-      margin-bottom: 20px;
+      font-size: 32px;
     }
 
     iframe {
       border: 15px solid rgba(26, 26, 26, 0.686);
       border-radius: 15px;
+      margin-top: 25px;
     }
   }
 }
