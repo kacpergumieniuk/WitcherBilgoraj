@@ -88,6 +88,14 @@ body {
   color: rgba(214, 214, 214, 0.686);
   width: 100%;
   z-index: 100;
+  /*.logo::after {
+        content: '';
+        height: 1px;
+        width: 65%;
+        background: $White;
+        position: absolute;
+        bottom: -8px;
+      }*/
 }
 
 .anim-body .fog-anim .navbar .logo {
@@ -115,15 +123,6 @@ body {
 
 .anim-body .fog-anim .navbar .logo p {
   color: #540e0e;
-}
-
-.anim-body .fog-anim .navbar .logo::after {
-  content: '';
-  height: 1px;
-  width: 65%;
-  background: rgba(214, 214, 214, 0.686);
-  position: absolute;
-  bottom: -8px;
 }
 
 .anim-body .fog-anim .navbar ul {
