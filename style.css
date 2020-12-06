@@ -342,6 +342,33 @@ body {
   color: #540e0e;
 }
 
+@media (max-width: 1000px) {
+  .anim-body .fog-anim {
+    background: #101010;
+    z-index: -20;
+  }
+  .anim-body .fog-anim #jasio {
+    left: 20%;
+  }
+  .anim-body .fog-anim #kamil {
+    right: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .anim-body .fog-anim .navbar ul {
+    display: none;
+  }
+  .anim-body .fog-anim #jasio {
+    max-height: 500px;
+    left: 7%;
+  }
+  .anim-body .fog-anim #kamil {
+    max-height: 500px;
+    right: 0%;
+  }
+}
+
 @-webkit-keyframes fogAnim {
   0% {
     background-position: 200% bottom;

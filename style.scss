@@ -275,6 +275,42 @@ body {
   }
 }
 
+@media (max-width: 1000px) {
+  .anim-body {
+    .fog-anim {
+      background: $Black;
+      z-index: -20;
+      #jasio {
+        left: 20%;
+      }
+      #kamil {
+        right: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .anim-body {
+    .fog-anim {
+      .navbar {
+        ul {
+          display: none;
+        }
+      }
+
+      #jasio {
+        max-height: 500px;
+        left: 7%;
+      }
+      #kamil {
+        max-height: 500px;
+        right: 0%;
+      }
+    }
+  }
+}
+
 @keyframes fogAnim {
   0% {
     background-position: 200% bottom;
