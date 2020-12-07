@@ -184,6 +184,7 @@ body {
     font-size: 72px;
     color: $White;
     transition: 0.5s;
+    width: 100%;
   }
   h1:hover {
     margin-bottom: 10px;
@@ -275,39 +276,71 @@ body {
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .anim-body {
+    .fog-anim {
+      background: none;
+
+      #jasio {
+        left: 20%;
+      }
+      #kamil {
+        right: 20%;
+      }
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .anim-body {
     .fog-anim {
       .navbar {
+        justify-content: center;
+        flex-direction: column;
+
+        .logo {
+          margin: 0px 20px 10px 20px;
+        }
         ul {
-          display: none;
+          margin: 0 auto;
         }
       }
 
       #jasio {
         max-height: 500px;
         left: 7%;
-        transform: translateX(-2px);
       }
       #kamil {
         max-height: 500px;
         right: 0%;
-        transform: translateX(2px);
       }
     }
   }
-}
+  .film-section {
+    h1 {
+      font-size: 18px;
+    }
+  }
 
-@media (max-width: 1000px) {
-  .anim-body {
-    .fog-anim {
-      background: $Black;
-      z-index: -20;
-      #jasio {
-        left: 20%;
+  .story-section {
+    .content {
+      h2 {
+        font-size: 16px;
       }
-      #kamil {
-        right: 20%;
+      iframe {
+        width: 300px;
+        height: 200px;
+      }
+    }
+  }
+  .contact-section {
+    .icons {
+      .icon-section {
+        margin: 0 10px;
+        i {
+          transform: scale(0.7);
+        }
       }
     }
   }

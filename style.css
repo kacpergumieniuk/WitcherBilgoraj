@@ -214,6 +214,7 @@ body {
   color: rgba(214, 214, 214, 0.686);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  width: 100%;
 }
 
 .film-section h1:hover {
@@ -343,34 +344,58 @@ body {
   color: #540e0e;
 }
 
-@media (max-width: 700px) {
-  .anim-body .fog-anim .navbar ul {
-    display: none;
-  }
-  .anim-body .fog-anim #jasio {
-    max-height: 500px;
-    left: 7%;
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-  }
-  .anim-body .fog-anim #kamil {
-    max-height: 500px;
-    right: 0%;
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px);
-  }
-}
-
 @media (max-width: 1000px) {
   .anim-body .fog-anim {
-    background: #101010;
-    z-index: -20;
+    background: none;
   }
   .anim-body .fog-anim #jasio {
     left: 20%;
   }
   .anim-body .fog-anim #kamil {
     right: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .anim-body .fog-anim .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .anim-body .fog-anim .navbar .logo {
+    margin: 0px 20px 10px 20px;
+  }
+  .anim-body .fog-anim .navbar ul {
+    margin: 0 auto;
+  }
+  .anim-body .fog-anim #jasio {
+    max-height: 500px;
+    left: 7%;
+  }
+  .anim-body .fog-anim #kamil {
+    max-height: 500px;
+    right: 0%;
+  }
+  .film-section h1 {
+    font-size: 18px;
+  }
+  .story-section .content h2 {
+    font-size: 16px;
+  }
+  .story-section .content iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .contact-section .icons .icon-section {
+    margin: 0 10px;
+  }
+  .contact-section .icons .icon-section i {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
