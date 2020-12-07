@@ -14,6 +14,7 @@ $Black: rgb(16, 16, 16);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow: hidden;
 
   a {
     text-decoration: none;
@@ -33,7 +34,7 @@ body {
   margin: 0;
   font-family: thewitcher-medium;
   height: 400vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .bj {
@@ -274,22 +275,6 @@ body {
     }
   }
 }
-
-@media (max-width: 1000px) {
-  .anim-body {
-    .fog-anim {
-      background: $Black;
-      z-index: -20;
-      #jasio {
-        left: 20%;
-      }
-      #kamil {
-        right: 20%;
-      }
-    }
-  }
-}
-
 @media (max-width: 700px) {
   .anim-body {
     .fog-anim {
@@ -302,10 +287,27 @@ body {
       #jasio {
         max-height: 500px;
         left: 7%;
+        transform: translateX(-2px);
       }
       #kamil {
         max-height: 500px;
         right: 0%;
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .anim-body {
+    .fog-anim {
+      background: $Black;
+      z-index: -20;
+      #jasio {
+        left: 20%;
+      }
+      #kamil {
+        right: 20%;
       }
     }
   }
